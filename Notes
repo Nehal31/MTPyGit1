@@ -1,0 +1,52 @@
+Agenda:
+    [ 'Python', 'Git', 'Alorithms' ]
+
+    Basic About Programming Languages(Python, Java, C, ...)
+    How does a program becomes process(Process and Threads)
+    Explanation of Memory Layout (using a c code example)
+    Memory Leakage (Python solve the issue)
+    OOPs Concepts Class and Objects
+    Coding Practice on Hacker-Rank
+    Git Introduction
+
+    Python
+        Syntax Indentation
+        Data Types
+            Mutable : List, Array, Dictionary, Set,
+            Immutable : Number, String, Tuple, FrozenSet
+        Functions
+            Arguments
+            Normal Function
+            lambda Function
+        Decorators
+
+        Class
+            Inheritance
+            Polymorphism ( Method Overriding )
+        Regular Expression
+            Re module
+        Modules
+            Built in : os, os.path, sys
+            User Define
+        Python Virtual Environment
+            venv
+        File Handling
+            Using With Operator
+        Exception Handling
+            Builtin
+            User Define
+        Multi Processing
+
+        Multi Threading
+
+        Common Problem related to Process synchronisation
+
+        Python Testing framework
+            Unittesting
+            PtTesting
+        Python API Framework
+            flask
+            Django
+        Database
+            Sqlite
+
