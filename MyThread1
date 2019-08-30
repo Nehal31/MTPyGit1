@@ -1,0 +1,48 @@
+#import threading
+from threading import Thread
+from time import time,sleep
+from random import randint
+
+count = 0
+
+def increment():
+    global count
+    while True:
+        print("INSIDE increment enterd")
+        sleept = randint(1,3)
+        print("INSIDE increment going to sleep for ", sleept)
+        sleep(sleept)
+        print("INSIDE increment sleep completed ")
+        print("INSIDE increment updating count")
+        count += 1
+
+
+def decrement():
+    global count
+    while True:
+        print("INSIDE decrement enterd")
+        sleept = randint(1,5)
+        print("INSIDE decrement going to sleep for",sleept)
+        sleep(sleept)
+        print("INSIDE decrement sleep completed")
+        print("INSIDE decrement updating count")
+        count -= 1
+
+def counter():
+    while True:
+        print("INSIDE Counter")
+        print(count)
+        sleep(1)
+
+def main():
+    t1 = Thread(target=increment)
+    t2 = Thread(target=decrement)
+    t3 = Thread(target=counter)
+
+    t1.start()
+    t2.start()
+    t3.start()
+
+if __name__ == '__main__':
+    main()
+

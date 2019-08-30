@@ -60,6 +60,11 @@ def thread_main():
     t1.start()
     t2.start()
     t3.start()
+
+    t1.join()
+    t2.join()
+    t3.join()
+
     td = time.time() - t
     print('file creation done. Time Taken : ', td)
 
@@ -85,5 +90,29 @@ def main():
 '''
 
 if __name__ == '__main__':
+    main()
     thread_main()
 
+'''
+Test Run : 
+file creation started...
+Time Taken by create_file: BigFile1:  106.78653883934021
+Time Taken by create_file: BigFile2:  137.79908776283264
+Time Taken by create_file: BigFile3:  136.42752313613892
+file creation done. Time Taken :  382.1618106365204
+file creation started...
+Time Taken by create_file: BigFile2:  612.7871556282043
+Time Taken by create_file: BigFile1:  638.6807947158813
+Time Taken by create_file: BigFile3:  643.4015126228333
+file creation done. Time Taken :  644.5525662899017
+
+Process finished with exit code 0
+
+
+
+
+
+
+
+
+'''
