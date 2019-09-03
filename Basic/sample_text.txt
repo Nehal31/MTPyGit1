@@ -1,0 +1,19 @@
+This is a sample file to read date.
+Paragraph 1:
+Line 1
+Line 2
+Line 3
+Line 4
+
+Paragraph 2:
+Line 1
+Line 2
+Line 3
+Line 4
+
+Fruits List:
+Apple
+Banana
+Cherry
+Grapes
+Jack Fruit
