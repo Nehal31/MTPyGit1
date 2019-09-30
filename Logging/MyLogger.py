@@ -47,9 +47,9 @@ def log_generator():
 
 def logmessage():
     logFormat = " %(asctime)s: %levelname(s) => %(message)s, datefmt='%y-%m-%d %I:%M:%S %p"
-    log.basicConfig(filename=LogFile,
-                        filemode=LogFileMode,
-                        level=LogLevel,
+    log.basicConfig(filename='mylog.log',
+                        filemode='w',
+                        level=log.INFO,
                         format=logFormat,
                         )
 

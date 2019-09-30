@@ -3,7 +3,7 @@
 
 def wraper(func):
     def inner(a, b):
-        print("File name: {}\nFunction name: {}".format(__file__, func.__name__))
+        print("File name: {}\tFunction name: {}".format(__file__, func.__name__))
         func(a, b)
     return inner
 
